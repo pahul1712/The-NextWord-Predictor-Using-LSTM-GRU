@@ -47,7 +47,7 @@ streamlit run app.py
 
 
 
-🧠 How It Works (Conceptual)
+## 🧠 How It Works (Conceptual)
 
 1. Dataset → Sequences
 
@@ -72,7 +72,7 @@ Take a user prompt → tokenize → pad/truncate to the model’s input length �
 See predict_word() and model loading in app.py. 
  
 
-🧪 Try These Prompts
+## 🧪 Try These Prompts
 
 To be or not → model predicts …
 
