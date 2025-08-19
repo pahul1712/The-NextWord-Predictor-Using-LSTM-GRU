@@ -42,27 +42,30 @@ pip install -r requirements.txt
 
 
 2) Run the app
+   
 streamlit run app.py
+
+
 
 🧠 How It Works (Conceptual)
 
-Dataset → Sequences
+1. Dataset → Sequences
 
 Clean Shakespeare’s Hamlet, tokenize, then build next-word training pairs (N-gram sequences).
 
 The final token index is the target; the preceding tokens form the input window.
 
-Model Families
+2. Model Families
 
 LSTM: excels at longer dependencies with memory cells.
 
 GRU: leaner, often trains faster with comparable quality.
 
-Training & Saving
+3. Training & Saving
 
 Train each model in its respective notebook, monitor loss, save the best .h5 weights and tokenizer.pickle.
 
-Inference (App)
+4. Inference (App)
 
 Take a user prompt → tokenize → pad/truncate to the model’s input length → predict class index → map back to word.
 
