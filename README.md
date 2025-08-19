@@ -18,26 +18,26 @@ Predict the **next word** in Shakespeare’s *Hamlet* using two recurrent archit
 
 ## 🗂️ Repository Structure
 
-├── LSTM_RNN(Predicting_Next_Word).ipynb # LSTM training & evaluation notebook
-├── GRU_LSTM_RNN(Predicting_Next_Word).ipynb # GRU training & evaluation notebook
-├── hamlet.txt # Dataset (public domain Shakespeare)
-├── app.py # Streamlit app (loads saved model + tokenizer)
-├── next_word_lstm.h5 # Saved LSTM model (training artifact)
-├── next_word_GRU_lstm.h5 # Saved GRU/LSTM model used by app
-├── tokenizer.pickle # Fitted tokenizer
-└── requirements.txt # Dependencies (TF, Streamlit, NLTK, etc.)
+1. LSTM_RNN(Predicting_Next_Word).ipynb        # LSTM training & evaluation notebook
+2. GRU_LSTM_RNN(Predicting_Next_Word).ipynb    # GRU training & evaluation notebook
+3. hamlet.txt                                  # Dataset (public domain Shakespeare)
+4. app.py                                      # Streamlit app (loads saved model + tokenizer)
+5. next_word_lstm.h5                           # Saved LSTM model (training artifact)
+6. next_word_GRU_lstm.h5                       # Saved GRU/LSTM model used by app
+7. tokenizer.pickle                            # Fitted tokenizer
+8. requirements.txt                            # Dependencies (TF, Streamlit, NLTK, etc.)
 
 
 
-> The Streamlit app loads `next_word_GRU_lstm.h5` and `tokenizer.pickle` at startup. :contentReference[oaicite:4]{index=4}
+> The Streamlit app loads `next_word_GRU_lstm.h5` and `tokenizer.pickle` at startup
 
 ---
 
 ## 🚀 Quickstart
 
 ### 1) Clone & install
-git clone https://github.com/<your-username>/<your-repo>.git
-cd <your-repo>
+git clone https://github.com/pahul1712/The-NextWord-Predictor-Using-LSTM-GRU.git
+cd The-NextWord-Predictor-Using-LSTM-GRU
 pip install -r requirements.txt
 
 
